@@ -1,0 +1,26 @@
+{
+  "name": "code-sceptre",
+  "description": "This website has the portfolio of Parth Prajapati",
+  "version": "1.0.0",
+  "author": "Parth Prajapati <parth17prajapati@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.145",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "react-feather": "^1.0.8"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.9.2"
+  }
+}

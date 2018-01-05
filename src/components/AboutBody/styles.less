@@ -1,0 +1,38 @@
+.panel {
+    border: none;
+    border-radius: 0;
+    &-default>&-heading {
+        background-color: #FFFFFF;
+    }
+}
+
+.panelBody {
+    font-size: 16px;
+    a {
+        text-decoration: underline;
+        color: #000000;
+    }
+    li {
+        margin: 5px 0;
+    }
+    .label {
+        margin-left: 10px;
+    }
+    tr {
+        height: 30px;
+    }
+    .skills {
+        &Row {
+            margin-bottom: 10px;
+            &Last {
+                margin-bottom: 0;
+            }
+            .label {
+                display: inline-block;
+            }
+        }
+        &Separator {
+            margin: 10px 0;
+        }
+    }
+}

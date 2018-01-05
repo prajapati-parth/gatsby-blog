@@ -1,0 +1,53 @@
+.profileImageContainer img {
+  border-radius: 100px;
+  width: 160px;
+}
+.name {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+.nameContainer {
+  margin-top: 25px;
+}
+.nameContainer .githubHandle a {
+  color: #969696;
+  text-decoration: none;
+}
+.nameContainer .githubHandle a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.name-nick {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.bioContainer {
+  margin-top: 15px;
+}
+.bioContainer p {
+  margin: 0;
+  font-size: 16px;
+}
+.locationContainer {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.locationContainer p {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+}
+.profileLinkContainer {
+  margin-top: 5px;
+}
+.profileLink a {
+  text-decoration: none;
+  color: #3C3D3D;
+  font-size: 16px;
+  display: flex;
+}
+.profileLink a:hover {
+  cursor: pointer;
+}
