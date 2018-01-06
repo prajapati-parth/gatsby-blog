@@ -20,3 +20,18 @@ body {
   color: #484848;
   background-color: #EAEAEA;
 }
+
+.headerContainer .navbar {
+  border-radius: 0;
+}
+.headerContainer .navbar-default {
+  background-color: #FFFFFF;
+  border: transparent;
+  border-bottom: 1px solid #E3E3E3;
+  padding: 5px 0;
+}
+.headerContainer .navbar-header a {
+  font-weight: bold;
+  font-size: 20px;
+  color: #777;
+}

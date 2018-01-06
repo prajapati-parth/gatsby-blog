@@ -18,7 +18,7 @@ const AboutBody = () => {
         <div className='panel-body'>
           <span className='panelBody'>
             I'm Parth Prajapati, from Ahmedabad, India. Currently working&nbsp;
-            <a href='https://www.marutitech.com/'>@MarutitechLabs</a>&nbsp;
+            <a href='https://www.marutitech.com/' target='_blank'>@MarutitechLabs</a>&nbsp;
             and specialize in Fullstack web development and graphic designing.
             <br /><br />
             With an experience of { CommonFunctions.getExperience() } years in architecting, designing and developing solutions for growing bussiness needs,

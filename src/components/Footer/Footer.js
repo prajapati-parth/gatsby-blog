@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='row'>
                     <div className='col-xs-12'>
                         <div className='footerText'>
-                            <Code size={22} />&nbsp;with&nbsp;<Heart size={22} />&nbsp;using&nbsp;<span className='footerBold'>React</span>&nbsp;by&nbsp;<a className='footerBold' href='https://github.com/prajapati-parth' target='_blank'>prajapati-parth</a>
+                            <Code size={22} />&nbsp;with&nbsp;<Heart size={22} />&nbsp;using&nbsp;<span className='footerBold'>React</span>&nbsp;&&nbsp;<span className='footerBold'>Gatsby</span>&nbsp;by&nbsp;<a className='footerBold' href='https://github.com/prajapati-parth' target='_blank'>prajapati-parth</a>
                         </div>
                     </div>
                 </div>

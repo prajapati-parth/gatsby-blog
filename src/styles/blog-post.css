@@ -1,0 +1,13 @@
+.blogPostContainer {
+  background-color: #FFFFFF;
+  padding: 15px 45px;
+}
+.blogPostContent {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.blogPostContent p,
+.blogPostContent ul,
+.blogPostContent ol {
+  margin: 20px 0;
+}
