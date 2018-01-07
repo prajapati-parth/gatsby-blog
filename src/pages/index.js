@@ -8,12 +8,12 @@ import '../styles/index.css';
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <div className="blogPosts">
+    <div className="blogPosts row">
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
-            <div className="blogPostItem" key={post.id}>
+            <div className="blogPostItem col-xs-12 col-sm-6" key={post.id}>
               <div className='panel panel-default' onClick={() => {navigateTo(post.frontmatter.path)}}>
                 <div className='panel-heading'>
                   <h2 className='panel-title'>
@@ -27,10 +27,10 @@ export default function Index({ data }) {
                 </div>
                 <div className="panel-footer">
                   <div className="row">
-                    <div className="col-xs-12 col-md-8">
+                    <div className="col-xs-8">
                       <Calendar size={14} />&nbsp;&nbsp;&nbsp;{post.frontmatter.date}
                     </div>
-                    <div className="col-xs-12 col-md-4">
+                    <div className="col-xs-4">
                       <span className="blogReadMore pull-right">
                         <Link to={post.frontmatter.path}>Read more...</Link>
                       </span>
@@ -56,6 +56,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            tags
           }
         }
       }

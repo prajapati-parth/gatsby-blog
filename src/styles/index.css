@@ -1,20 +1,20 @@
-.panel {
+.blogPostItem .panel {
   border: none;
   border-radius: 0;
   transition: all 0.5s;
 }
-.panel-default > .panel-heading {
+.blogPostItem .panel-default > .blogPostItem .panel-heading {
   background-color: #FFFFFF;
 }
-.panel-footer {
+.blogPostItem .panel-footer {
   background-color: #FFFFFF;
   font-size: 14px;
 }
-.panel-footer a {
+.blogPostItem .panel-footer a {
   text-decoration: underline;
   color: #000000;
 }
-.panel:hover {
+.blogPostItem .panel:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 9px -2px #4d4c4d;
   -moz-box-shadow: 0px 4px 9px -2px #4d4c4d;

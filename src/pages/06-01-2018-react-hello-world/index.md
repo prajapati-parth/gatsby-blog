@@ -2,9 +2,10 @@
 path: "/react-hello-world"
 date: "2018-01-06T11:00:00.000Z"
 title: "Creating a Hello World React application"
+tags: ['React', 'ReactDOM', 'Babel', 'Webpack']
 ---
 
-Creating something from scratch has its own perks and advantages. Whilst the excitement of building from ground up is a perk, the advantages can be listed as:  
+Creating an application from scratch has its own perks and advantages. Whilst the excitement of building from ground up is a perk, the advantages can be listed as:  
 - Having total control over the application in terms of configuration and architecture
 - Knowing the ins and outs and every corner of it
 - Control over each and every package used

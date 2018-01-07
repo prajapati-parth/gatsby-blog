@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import {Calendar} from 'react-feather'
 
 import '../styles/blog-post.css';
 
@@ -12,6 +13,11 @@ export default function Template({
       <Helmet title={`My Blog - ${post.frontmatter.title}`} />
       <div className="blogPost">
         <h1>{post.frontmatter.title}</h1>
+        <div className="blogPostInfoContainer">
+          <span className="blogPostDate">
+            <Calendar size={14} />&nbsp;&nbsp;&nbsp;{post.frontmatter.date}
+          </span>
+        </div>
         <br />
         <div
           className="blogPostContent"
@@ -30,6 +36,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        tags
       }
     }
   }

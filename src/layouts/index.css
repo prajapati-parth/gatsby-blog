@@ -1,37 +1,57 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css');
-html, body, .rootWrapper, [data-reactroot], #___gatsby {
+html,
+body,
+[data-reactroot],
+#___gatsby {
   height: 100%;
 }
-
 .stickyFooterContainer {
   position: relative;
   height: 60px;
 }
-
 .pageWrapper {
   height: auto;
   margin: 0 auto -60px;
   min-height: 100%;
   padding-bottom: 60px;
 }
-
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #484848;
   background-color: #EAEAEA;
 }
-
 .headerContainer .navbar {
   border-radius: 0;
 }
 .headerContainer .navbar-default {
-  background-color: #FFFFFF;
+  background-color: #303F9F;
   border: transparent;
   border-bottom: 1px solid #E3E3E3;
   padding: 5px 0;
 }
+.headerContainer .navbar-default .navbar-nav li a {
+  color: #FFFFFF;
+}
+.headerContainer .navbar-default .navbar-nav li a:hover {
+  text-decoration: underline;
+}
+.headerContainer .navbar-header .navbar-toggle {
+  border-color: transparent;
+}
+.headerContainer .navbar-header .navbar-toggle:hover,
+.headerContainer .navbar-header .navbar-toggle:focus {
+  background-color: transparent;
+}
 .headerContainer .navbar-header a {
   font-weight: bold;
   font-size: 20px;
-  color: #777;
+  color: #FFFFFF;
+}
+.headerContainer .navbar-header a:hover,
+.headerContainer .navbar-header a:active,
+.headerContainer .navbar-header a:focus {
+  color: #FFFFFF;
+}
+.headerContainer .navbar-header .icon-bar {
+  background-color: #FFFFFF;
 }
