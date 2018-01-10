@@ -1,8 +1,9 @@
 ---
 path: "/react-hello-world"
 date: "2018-01-06T11:00:00.000Z"
-title: "Creating a Hello World React application"
+title: "Creating a Hello World React application from scratch"
 tags: ['React', 'ReactDOM', 'Babel', 'Webpack']
+theme: 'blue'
 ---
 
 Creating an application from scratch has its own perks and advantages. Whilst the excitement of building from ground up is a perk, the advantages can be listed as:  

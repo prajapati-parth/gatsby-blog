@@ -1,29 +1,46 @@
-.blogPostItem .panel {
-  border: none;
-  border-radius: 0;
+@import url('../utils/appTheme.css');
+.blogPostItemContainer {
+  background-color: var(--appWhiteBase);
+  padding: 15px 25px;
+  border-radius: 5px;
   transition: all 0.5s;
 }
-.blogPostItem .panel-default > .blogPostItem .panel-heading {
-  background-color: #FFFFFF;
-}
-.blogPostItem .panel-footer {
-  background-color: #FFFFFF;
-  font-size: 14px;
-}
-.blogPostItem .panel-footer a {
-  text-decoration: underline;
-  color: #000000;
-}
-.blogPostItem .panel:hover {
+.blogPostItemContainer:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 4px 9px -2px #4d4c4d;
-  -moz-box-shadow: 0px 4px 9px -2px #4d4c4d;
-  box-shadow: 0px 4px 9px -2px #4d4c4d;
+  -webkit-box-shadow: var(--blogItemCardShadow);
+  -moz-box-shadow: var(--blogItemCardShadow);
+  box-shadow: var(--blogItemCardShadow);
 }
-.panelBody {
+.blogheader-blue {
+  border-top: 8px solid var(--blogItemCardTopMarginColor);
+}
+.blogPostItemBody {
+  margin: 20px 0;
   font-size: 16px;
 }
-.panelBody a {
-  text-decoration: underline;
-  color: #000000;
+.blogPostItemFooter {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.blogPostItemDateContainer {
+  padding: 10px 0;
+  font-size: 16px;
+}
+.footerButton {
+  border-radius: 28px;
+  padding: 10px 20px;
+  border: none;
+  color: var(--appWhiteBase);
+}
+.footerButton-blue {
+  background-image: var(--buttonBlueGradient);
+}
+.footerButtonContainer {
+  margin-top: 20px;
+}
+.badge {
+  margin-right: 4px;
+}
+.badge-blue {
+  background-color: var(--badgeBlueColor);
 }

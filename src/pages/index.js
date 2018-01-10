@@ -13,27 +13,55 @@ export default function Index({ data }) {
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
-            <div className="blogPostItem col-xs-12 col-sm-6" key={post.id}>
-              <div className='panel panel-default' onClick={() => {navigateTo(post.frontmatter.path)}}>
-                <div className='panel-heading'>
-                  <h2 className='panel-title'>
-                    <strong>{post.frontmatter.title}</strong>
-                  </h2>
+            <div className={`blogPostItemContainer blogheader-${post.frontmatter.theme} col-xs-12 col-sm-6`}
+              key={post.id}
+              onClick={() => {navigateTo(post.frontmatter.path)}}>
+              <div className='blogPostItem'>
+                <div className='blogPostItemHeading'>
+                  <h3><strong>{post.frontmatter.title}</strong></h3>
                 </div>
-                <div className='panel-body'>
-                  <span className='panelBody'>
-                    {post.excerpt}
-                  </span>
+
+                <div className='blogPostItemTagNameContainer'>
+                  {post.frontmatter.tags.map((tag, index) => {
+                    return (
+                      <span key={index} className={`badge badge-${post.frontmatter.theme}`}>{tag}</span>
+                    )
+                  })}
                 </div>
-                <div className="panel-footer">
-                  <div className="row">
-                    <div className="col-xs-8">
-                      <Calendar size={14} />&nbsp;&nbsp;&nbsp;{post.frontmatter.date}
+
+                <div className='blogPostItemBody'>
+                  {post.excerpt}
+                </div>
+
+                <div className='blogPostItemFooter'>
+                  <div className='row hidden-xs'>
+                    <div className='col-md-6'>
+                      <div className='blogPostItemDateContainer'>
+                        <Calendar size={14} />&nbsp;&nbsp;{post.frontmatter.date}
+                      </div>
                     </div>
-                    <div className="col-xs-4">
-                      <span className="blogReadMore pull-right">
-                        <Link to={post.frontmatter.path}>Read more...</Link>
-                      </span>
+
+                    <div className='col-md-6'>
+                      <button className={`footerButton footerButton-${post.frontmatter.theme} pull-right`}>
+                        Read more
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className='row visible-xs'>
+                    <div className='col-xs-12'>
+                      <div className='text-center'>
+                        <div className='blogPostItemDateContainer'>
+                          <Calendar size={14} />&nbsp;&nbsp;&nbsp;{post.frontmatter.date}
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-xs-12 footerButtonContainer'>
+                      <div className='text-center'>
+                        <button className='footerButton'>
+                          Read more
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -57,6 +85,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             tags
+            theme
           }
         }
       }
