@@ -5,24 +5,36 @@ import {Calendar} from 'react-feather'
 import '../styles/blog-post.css';
 
 export default function Template({
-  data, // this prop will be injected by the GraphQL query we'll write in a bit
+  data,
 }) {
-  const { markdownRemark: post } = data; // data.markdownRemark holds our post data
+  const { markdownRemark: post } = data;
   return (
     <div className="blogPostContainer">
       <Helmet title={`My Blog - ${post.frontmatter.title}`} />
-      <div className="blogPost">
-        <h1>{post.frontmatter.title}</h1>
-        <div className="blogPostInfoContainer">
-          <span className="blogPostDate">
-            <Calendar size={14} />&nbsp;&nbsp;&nbsp;{post.frontmatter.date}
-          </span>
+      <div className="row blogPost">
+        <div className='col-xs-12'>
+          <h1>{post.frontmatter.title}</h1>
         </div>
-        <br />
-        <div
-          className="blogPostContent"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <div className='col-xs-12'>
+          <div className='blogPostBadgeContainer'>
+            {
+              post.frontmatter.tags.map((tag, index) => {
+                return <span key={index} className={`badge badge-${post.frontmatter.theme}`}>{tag}</span>
+              })
+            }
+          </div>
+        </div>
+        <div className='col-xs-12'>
+          <div className='blogPostDateContainer'>
+            <Calendar size={14} />&nbsp;&nbsp;{post.frontmatter.date}
+          </div>
+        </div>
+        <div className='col-xs-12'>
+          <div
+            className="blogPostContent"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </div>
       </div>
     </div>
   );

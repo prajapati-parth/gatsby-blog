@@ -1,3 +1,4 @@
+@import url('../../utils/appTheme.css');
 .footer {
   position: absolute;
   bottom: 0;
@@ -5,22 +6,22 @@
   height: 59px;
   font-size: 12px;
   margin-bottom: 1px;
-  background-color: #FFFFFF;
+  background-color: var(--footerBGColor);
 }
 .footerText {
   padding: 20px 0;
   font-size: 14px;
-  color: #777777;
+  color: var(--footerTextColor);
   display: flex;
   justify-content: center;
 }
 .footerText a {
   text-decoration: underline;
-  color: #777777;
+  color: var(--footerTextColor);
 }
 .footerText a:hover {
   text-decoration: underline;
-  color: #000000;
+  color: var(--footerTextColor-hover);
 }
 .footerBold {
   font-weight: 700;

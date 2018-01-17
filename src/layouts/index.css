@@ -22,13 +22,12 @@ body {
   border-radius: 0;
 }
 .headerContainer .navbar-default {
-  background-color: var(--primaryColor);
+  background-color: var(--appBGColor);
   border: transparent;
-  border-bottom: 1px solid #E3E3E3;
   padding: 5px 0;
 }
 .headerContainer .navbar-default .navbar-nav li a {
-  color: var(--appWhiteBase);
+  color: var(--headerTextColor);
 }
 .headerContainer .navbar-default .navbar-nav li a:hover {
   text-decoration: underline;
@@ -43,13 +42,13 @@ body {
 .headerContainer .navbar-header a {
   font-weight: bold;
   font-size: 20px;
-  color: var(--appWhiteBase);
+  color: var(--headerTextColor);
 }
 .headerContainer .navbar-header a:hover,
 .headerContainer .navbar-header a:active,
 .headerContainer .navbar-header a:focus {
-  color: var(--appWhiteBase);
+  color: var(--headerTextColor);
 }
 .headerContainer .navbar-header .icon-bar {
-  background-color: var(--appWhiteBase);
+  background-color: var(--headerTextColor);
 }

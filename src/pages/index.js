@@ -58,9 +58,9 @@ export default function Index({ data }) {
                     </div>
                     <div className='col-xs-12 footerButtonContainer'>
                       <div className='text-center'>
-                        <button className='footerButton'>
-                          Read more
-                        </button>
+                      <button className={`footerButton footerButton-${post.frontmatter.theme}`}>
+                        Read more
+                      </button>
                       </div>
                     </div>
                   </div>

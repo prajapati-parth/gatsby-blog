@@ -1,5 +1,6 @@
+@import url('../utils/appTheme.css');
 .blogPostContainer {
-  background-color: #FFFFFF;
+  background-color: var(--appWhiteBase);
   padding: 15px 45px;
 }
 .blogPostContent {
@@ -13,4 +14,11 @@
 }
 .blogPostInfoContainer {
   margin-top: 15px;
+}
+.blogPostBadgeContainer {
+  margin: 10px 0;
+}
+.blogPostDateContainer {
+  margin: 10px 0;
+  font-size: 16px;
 }

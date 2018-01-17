@@ -10,4 +10,8 @@
   --blogItemCardShadow: 0px 4px 9px -2px #4D4C4D;
   --buttonBlueGradient: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
   --badgeBlueColor: #667EEA;
+  --footerBGColor: #FFFFFF;
+  --footerTextColor: #777777;
+  --footerTextColor-hover: #444444;
+  --headerTextColor: #777777;
 }
