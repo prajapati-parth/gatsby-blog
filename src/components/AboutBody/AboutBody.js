@@ -19,7 +19,7 @@ const AboutBody = () => {
           <span className='panelBody'>
             I'm Parth Prajapati, from Ahmedabad, India. Currently working&nbsp;
             <a href='http://incapsulate.com/' target='_blank'>@Incapsulate</a>&nbsp;
-            and specialize in Fullstack web development and graphic designing.
+            as an Associate Consultant and specialize in Fullstack web development and graphic designing.
             <br /><br />
             With an experience of { CommonFunctions.getExperience() } years in architecting, designing and developing solutions for growing bussiness needs,
             I am focused on implementing advanced technologies and tools that enable me to build a magnitude of powerful apps in a quick and efficient manner.
@@ -119,6 +119,12 @@ const AboutBody = () => {
         <div className='panel-body'>
           <span className='panelBody'>
             <ul className='sideProjectDetails'>
+              <li>
+                  <a href='https://github.com/prajapati-parth/gitlly'>Gitlly</a><span className='label label-default'>React</span><span className='label label-default'>electron</span>
+              </li>
+              <li>
+                  <a href='https://github.com/prajapati-parth/minimal-react'>Minimal-React</a><span className='label label-default'>Nodejs</span><span className='label label-default'>Command line tool</span>
+              </li>
               <li>
                   <a href='https://github.com/prajapati-parth/quick-ping'>Quick-ping</a><span className='label label-default'>react native</span>
               </li>
