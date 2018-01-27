@@ -47,7 +47,7 @@ export default function Template({
               <div className='row'>
                 {
                   post.frontmatter.previousPath && (
-                    <div className='col-xs-6'>
+                    <div className='col-xs-12 col-sm-6'>
                       <div className={`linkContainer linkContainerHeader-${post.frontmatter.previousTheme}`} onClick={() => {navigateTo(post.frontmatter.previousPath)}}>
                         <div className='row'>
                           <div className='col-xs-12'>
@@ -67,7 +67,7 @@ export default function Template({
                 }
                 {
                   post.frontmatter.nextPath && (
-                    <div className='col-xs-6'>
+                    <div className='col-xs-12 col-sm-6'>
                       <div className={`linkContainer linkContainerHeader-${post.frontmatter.nextTheme}`} onClick={() => {navigateTo(post.frontmatter.nextPath)}}>
                         <div className='row'>
                           <div className='col-xs-12'>

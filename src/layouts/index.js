@@ -7,37 +7,55 @@ import Footer from '../components/Footer'
 
 import './index.css'
 
-const Header = () => (
-  <div className='headerContainer'>
-    <nav className='navbar navbar-default'>
-      <div className='container'>
-        <div className='navbar-header'>
-          <button type='button' className='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false'>
-            <span className='sr-only'>Toggle navigation</span>
-            <span className='icon-bar'></span>
-            <span className='icon-bar'></span>
-            <span className='icon-bar'></span>
-          </button>
-          <Link className='navbar-brand' to='/'>daBlog</Link>
-        </div>
+class Header extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      isOpen: false
+    }
+  }
 
-        <div className='collapse navbar-collapse'>
-          <ul className='nav navbar-nav navbar-right'>
-            <li>
-              <Link to='/about/'>About</Link>
-            </li>
-            <li>
-              <Link to='/gists/'>Gists</Link>
-            </li>
-            <li>
-              <a href='https://github.com/prajapati-parth' target='_blank'>GitHub</a>
-            </li>
-          </ul>
-        </div>
+  render() {
+    return (
+      <div className='headerContainer'>
+        <nav className='navbar navbar-default'>
+          <div className='container'>
+            <div className='navbar-header'>
+              <button type='button'
+                className='navbar-toggle collapsed'
+                onClick={() => {
+                  this.setState({
+                    isOpen: !this.state.isOpen
+                  })
+                }}
+              >
+                <span className='sr-only'>Toggle navigation</span>
+                <span className='icon-bar'></span>
+                <span className='icon-bar'></span>
+                <span className='icon-bar'></span>
+              </button>
+              <Link className='navbar-brand' to='/'>daBlog</Link>
+            </div>
+    
+            <div className={`collapse navbar-collapse ${this.state.isOpen ? 'in' : ''}`}>
+              <ul className='nav navbar-nav navbar-right'>
+                <li>
+                  <Link to='/about/'>About</Link>
+                </li>
+                <li>
+                  <Link to='/gists/'>Gists</Link>
+                </li>
+                <li>
+                  <a href='https://github.com/prajapati-parth' target='_blank'>GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-)
+    )
+  }
+}
 
 const TemplateWrapper = ({ children }) => (
   <div>

@@ -33,6 +33,7 @@
   background-color: var(--appWhiteBase);
   padding: 12px 15px;
   border-radius: 5px;
+  margin: 6px 0;
 }
 .linkContainerHeader-blue {
   border-top: 8px solid var(--topMarginBlueColor);
