@@ -4,6 +4,7 @@
   padding: 15px 25px;
   border-radius: 5px;
   transition: all 0.5s;
+  margin: 12px 0;
 }
 .blogPostItemContainer:hover {
   cursor: pointer;
@@ -12,7 +13,10 @@
   box-shadow: var(--blogItemCardShadow);
 }
 .blogheader-blue {
-  border-top: 8px solid var(--blogItemCardTopMarginColor);
+  border-top: 8px solid var(--topMarginBlueColor);
+}
+.blogheader-green {
+  border-top: 8px solid var(--topMarginGreenColor);
 }
 .blogPostItemBody {
   margin: 20px 0;
@@ -34,6 +38,9 @@
 .footerButton-blue {
   background-image: var(--buttonBlueGradient);
 }
+.footerButton-green {
+  background-image: var(--buttonGreenGradient);
+}
 .footerButtonContainer {
   margin-top: 20px;
 }
@@ -42,4 +49,7 @@
 }
 .badge-blue {
   background-color: var(--badgeBlueColor);
+}
+.badge-green {
+  background-color: var(--badgeGreenColor);
 }

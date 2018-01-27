@@ -2,6 +2,7 @@
 .blogPostContainer {
   background-color: var(--appWhiteBase);
   padding: 15px 45px;
+  border-radius: 5px;
 }
 .blogPostContent {
   font-size: 18px;
@@ -21,4 +22,27 @@
 .blogPostDateContainer {
   margin: 10px 0;
   font-size: 16px;
+}
+.blogPostHeader-blue {
+  border-top: 8px solid var(--topMarginBlueColor);
+}
+.footerLinksContainer {
+  margin-top: 12px;
+}
+.linkContainer {
+  background-color: var(--appWhiteBase);
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+.linkContainerHeader-blue {
+  border-top: 8px solid var(--topMarginBlueColor);
+}
+.linkContainerHeader-green {
+  border-top: 8px solid var(--topMarginGreenColor);
+}
+.linkContainer:hover {
+  cursor: pointer;
+  -webkit-box-shadow: var(--blogItemCardShadow);
+  -moz-box-shadow: var(--blogItemCardShadow);
+  box-shadow: var(--blogItemCardShadow);
 }

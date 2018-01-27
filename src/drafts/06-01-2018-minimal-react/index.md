@@ -2,6 +2,8 @@
 path: "/minimal-react"
 date: "2018-01-06T10:05:00.000Z"
 title: "Minimal React - The bare-minimum React setup"
+tags: ['React', 'ReactDOM', 'Babel', 'Webpack']
+theme: 'blue' 
 ---
 
 Johannes Gensfleisch zur Laden zum Gutenberg (c. `1398` – `1468`) was a German blacksmith, goldsmith, printer, and publisher who introduced printing to Europe.
