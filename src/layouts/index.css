@@ -28,9 +28,17 @@ body {
 }
 .headerContainer .navbar-default .navbar-nav li a {
   color: var(--headerTextColor);
+  font-size: 18px;
 }
 .headerContainer .navbar-default .navbar-nav li a:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+.headerContainer .navbar-header {
+  padding: 12px 0;
+}
+.headerContainer .navbar-right {
+  padding: 12px 0;
 }
 .headerContainer .navbar-header .navbar-toggle {
   border-color: transparent;
@@ -41,13 +49,14 @@ body {
 }
 .headerContainer .navbar-header a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   color: var(--headerTextColor);
 }
 .headerContainer .navbar-header a:hover,
 .headerContainer .navbar-header a:active,
 .headerContainer .navbar-header a:focus {
   color: var(--headerTextColor);
+  cursor: pointer;
 }
 .headerContainer .navbar-header .icon-bar {
   background-color: var(--headerTextColor);

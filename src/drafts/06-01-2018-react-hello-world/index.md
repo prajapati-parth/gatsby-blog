@@ -4,6 +4,12 @@ date: "2018-01-12T11:00:00.000Z"
 title: "Creating a Hello World React application from scratch"
 tags: ['React', 'ReactDOM', 'Babel', 'Webpack']
 theme: 'blue'
+nextPath: "/minimal-react"
+nextTitle: "Minimal React - The bare-minimum React setup"
+nextTheme: 'green'
+previousPath: "/react-hello-world-copy"
+previousTitle: "(Copy) Creating a Hello World React application from scratch"
+previousTheme: 'blue'
 ---
 
 Creating an application from scratch has its own perks and advantages. Whilst the excitement of building from ground up is a perk, the advantages can be listed as:  

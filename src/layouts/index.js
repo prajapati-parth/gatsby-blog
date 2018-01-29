@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import {navigateTo} from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import Analytics from '../utils/analytics'
 import Footer from '../components/Footer'
-
 import './index.css'
 
 class Header extends React.Component {
@@ -13,6 +13,23 @@ class Header extends React.Component {
     this.state = {
       isOpen: false
     }
+  }
+
+  headerProfileClick(location) {
+    Analytics.trackLinkClick({
+      category: 'Header profile',
+      action: 'click'
+    })
+    window.open(location)
+  }
+
+  headerLinkClick(location) {
+    Analytics.trackLinkClick({
+      category: 'Header link',
+      action: 'click',
+      label: location
+    })
+    navigateTo(location)
   }
 
   render() {
@@ -34,19 +51,19 @@ class Header extends React.Component {
                 <span className='icon-bar'></span>
                 <span className='icon-bar'></span>
               </button>
-              <Link className='navbar-brand' to='/'>daBlog</Link>
+              <a className='navbar-brand' onClick={() => {this.headerLinkClick('/')}}>daBlog</a>
             </div>
     
             <div className={`collapse navbar-collapse ${this.state.isOpen ? 'in' : ''}`}>
               <ul className='nav navbar-nav navbar-right'>
                 <li>
-                  <Link to='/about/'>About</Link>
+                  <a onClick={() => this.headerLinkClick('/about')}>About</a>
                 </li>
                 <li>
-                  <Link to='/gists/'>Gists</Link>
+                  <a onClick={() => this.headerLinkClick('/gists')}>Gists</a>
                 </li>
                 <li>
-                  <a href='https://github.com/prajapati-parth' target='_blank'>GitHub</a>
+                  <a onClick={() => this.headerProfileClick('https://github.com/prajapati-parth')}>GitHub</a>
                 </li>
               </ul>
             </div>

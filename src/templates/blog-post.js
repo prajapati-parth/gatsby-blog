@@ -104,12 +104,6 @@ export const pageQuery = graphql`
         title
         tags
         theme
-        nextPath
-        nextTitle
-        nextTheme
-        previousPath
-        previousTitle
-        previousTheme
       }
     }
   }

@@ -21,6 +21,7 @@
 }
 .footerText a:hover {
   text-decoration: underline;
+  cursor: pointer;
   color: var(--footerTextColor-hover);
 }
 .footerBold {
