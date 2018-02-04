@@ -30,6 +30,9 @@ class Header extends React.Component {
       action: 'click',
       label: location
     })
+    this.setState({
+      isOpen: false
+    })
     navigateTo(location)
   }
 
@@ -52,11 +55,15 @@ class Header extends React.Component {
                 <span className='icon-bar'></span>
                 <span className='icon-bar'></span>
               </button>
-              <a className='navbar-brand' onClick={() => {this.headerLinkClick('/')}}>{Copy.blogName}</a>
+              <a className='navbar-brand hidden-xs' onClick={() => {this.headerLinkClick('/')}}>{Copy.blogName}</a>
+              <a className='navbar-brand navbar-brand-xs visible-xs' onClick={() => {this.headerLinkClick('/')}}>{Copy.blogName}</a>
             </div>
     
             <div className={`collapse navbar-collapse ${this.state.isOpen ? 'in' : ''}`}>
               <ul className='nav navbar-nav navbar-right'>
+                <li>
+                  <a onClick={() => this.headerLinkClick('/')}>Home</a>
+                </li>
                 <li>
                   <a onClick={() => this.headerLinkClick('/about')}>About</a>
                 </li>

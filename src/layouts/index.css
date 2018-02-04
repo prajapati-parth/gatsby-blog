@@ -47,10 +47,13 @@ body {
 .headerContainer .navbar-header .navbar-toggle:focus {
   background-color: transparent;
 }
-.headerContainer .navbar-header a {
+.navbar-brand {
   font-weight: bold;
   font-size: 40px;
   color: var(--headerTextColor);
+}
+.navbar-brand-xs {
+  font-size: 30px;
 }
 .headerContainer .navbar-header a:hover,
 .headerContainer .navbar-header a:active,

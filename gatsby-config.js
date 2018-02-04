@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Parth Prajapati blog`,
+    title: `The Tecy Culture`,
   },
   plugins: [
     `gatsby-plugin-catch-links`,
@@ -18,6 +18,5 @@ module.exports = {
         plugins: [] // just in case those previously mentioned remark plugins sound cool :)
       }
     },
-  ],
-  pathPrefix: "/gatsby-blog"
+  ]
 }

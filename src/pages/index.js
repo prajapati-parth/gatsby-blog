@@ -39,25 +39,31 @@ export default function Index({ data }) {
                           </div>
 
                           <div className='blogPostItemBody'>
-                            {post.excerpt}
+                            <span className='hidden-xs'>{post.excerpt}</span>
                           </div>
 
                           <div className='blogPostItemFooter'>
-                            <div className='row hidden-xs'>
-                              <div className='col-md-6'>
-                                <div className='blogPostItemDateContainer'>
+                            <div className='row'>
+                              <div className='col-xs-6'>
+                                {/* hidden for xs */}
+                                <div className='blogPostItemDateContainer hidden-xs'>
+                                  <Calendar size={14} />&nbsp;&nbsp;{post.frontmatter.date}
+                                </div>
+
+                                {/* visible for xs */}
+                                <div className='blogPostItemDateContainer blogPostItemDateContainer-xs visible-xs'>
                                   <Calendar size={14} />&nbsp;&nbsp;{post.frontmatter.date}
                                 </div>
                               </div>
 
-                              <div className='col-md-6'>
+                              <div className='col-xs-6'>
                                 <button className={`footerButton footerButton-${post.frontmatter.theme} pull-right`}>
                                   Read more
                                 </button>
                               </div>
                             </div>
 
-                            <div className='row visible-xs'>
+                            {/* <div className='row visible-xs'>
                               <div className='col-xs-12'>
                                 <div className='text-center'>
                                   <div className='blogPostItemDateContainer'>
@@ -72,7 +78,7 @@ export default function Index({ data }) {
                                 </button>
                                 </div>
                               </div>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
