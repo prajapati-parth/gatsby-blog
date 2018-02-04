@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 
 import Analytics from '../utils/analytics'
 import Footer from '../components/Footer'
+import Copy from '../utils/appCopy'
 import './index.css'
 
 class Header extends React.Component {
@@ -51,7 +52,7 @@ class Header extends React.Component {
                 <span className='icon-bar'></span>
                 <span className='icon-bar'></span>
               </button>
-              <a className='navbar-brand' onClick={() => {this.headerLinkClick('/')}}>daBlog</a>
+              <a className='navbar-brand' onClick={() => {this.headerLinkClick('/')}}>{Copy.blogName}</a>
             </div>
     
             <div className={`collapse navbar-collapse ${this.state.isOpen ? 'in' : ''}`}>
@@ -78,10 +79,10 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <div className='pageWrapper'>
       <Helmet
-        title='My blog'
+        title={Copy.blogName}
         meta={[
-          { name: 'description', content: 'A technology blog' },
-          { name: 'keywords', content: 'JavaScript, React, NPM' },
+          { name: 'description', content: 'A technical blog sharing my experience' },
+          { name: 'keywords', content: 'JavaScript, React, Angular, Technology' },
         ]}>
           <link rel='icon' type='image/x-icon' href='https://assets-cdn.github.com/favicon.ico' />
         </Helmet>

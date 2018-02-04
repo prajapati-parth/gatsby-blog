@@ -7,8 +7,9 @@ import CommonFunctions from '../utils/functions'
 import '../styles/index.css'
 
 export default function Index({ data }) {
-  let { edges: posts } = data.allMarkdownRemark;
+  let { edges: posts } = data.allMarkdownRemark
   posts = CommonFunctions.chunkArray(posts, 2)
+
   return (
     <div className='blogPosts'>
       {

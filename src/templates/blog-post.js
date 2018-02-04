@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import {navigateTo} from "gatsby-link";
 import {Calendar} from 'react-feather'
 
+import Copy from '../utils/appCopy'
 import '../styles/blog-post.css';
 
 export default function Template({
@@ -12,7 +13,7 @@ export default function Template({
   return (
     <div>
       <div className={`blogPostContainer blogPostHeader-${post.frontmatter.theme}`}>
-        <Helmet title={`My Blog - ${post.frontmatter.title}`} />
+        <Helmet title={`${post.frontmatter.title} - ${Copy.blogName}`} />
         <div className="row blogPost">
           <div className='col-xs-12'>
             <h1>{post.frontmatter.title}</h1>
